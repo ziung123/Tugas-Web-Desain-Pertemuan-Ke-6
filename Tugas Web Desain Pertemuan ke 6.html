@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="tel"], input[type="email"], input[type="password"], input[type="number"], input[type="date"] {
+            width: calc(100% - 10px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        input[type="checkbox"], input[type="radio"] {
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+        input[type="submit"] {
+            padding: 12px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Biodata Form</h2>
+        <form action="#" method="POST">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" value="Rozian Fadila"><br>
+
+            <label for="nim">NIM:</label>
+            <input type="text" id="nim" name="nim" value="5520122037"><br>
+
+            <label for="no_hp">No. HP:</label>
+            <input type="tel" id="no_hp" name="no_hp" value="089513188993"><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" value="rozianfadila41@gmail.com"><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br>
+
+            <label for="hobi">Hobi:</label><br>
+            <input type="checkbox" id="membaca" name="hobi" value="Membaca" checked>
+            <label for="membaca">Membaca</label>
+            <input type="checkbox" id="menulis" name="hobi" value="Menulis" checked>
+            <label for="menulis">Menulis</label>
+            <input type="checkbox" id="olahraga" name="hobi" value="Olahraga" checked>
+            <label for="olahraga">Olahraga</label>
+            <input type="checkbox" id="gaming" name="hobi" value="Gaming" checked>
+            <label for="gaming">Gaming</label><br>
+
+            <label for="jenis_kelamin">Jenis Kelamin:</label><br>
+            <input type="radio" id="pria" name="jenis_kelamin" value="Pria" checked>
+            <label for="pria">Pria</label>
+            <input type="radio" id="wanita" name="jenis_kelamin" value="Wanita">
+            <label for="wanita">Wanita</label><br>
+
+            <label for="number">Number / Angka:</label><br>
+            <input type="number" id="number" name="number" value="10"><br>
+
+            <label for="tanggal">Tanggal:</label><br>
+            <input type="date" id="tanggal" name="tanggal"><br>
+
+            <input type="submit" value="Get Data">
+        </form>
+    </div>
+</body>
+</html>
